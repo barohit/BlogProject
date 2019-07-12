@@ -1,0 +1,15 @@
+body {
+    color: #FFFFFF;
+    background-color: #000000;  
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+    position: relative; 
+    margin-top: 1000px;
+}
+
+#tiny {
+    font-size: 10px;
+}
