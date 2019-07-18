@@ -1,40 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-        <link rel="stylesheet" type="text/css" href="../assets/basictemplate.css">
-        <script type="text/javascript" src="../assets/validate.js"> </script>
-    </head>
-    <body>
-        <h1> Welcome! HayleyW </h1>
-        <!-- arr is an array of objects containing the title and the blog text itself  -->
-        <% arr.forEach(function(params) {
-            %> 
-            <h3> <%= params.title %>  </h3>
-            <p> <%= params.blog %> </p>
-            <br />
-            <br />
-            <% }); %>
-            <!-- Javascript function in validate unhides elements when user wants
-            to create a blog -->
-        <form action="createblog.html" method="post"> 
-            <input type="hidden" value='<%=user%>' name="user">
-            <div name="reveal" style="visibility:hidden">
-                Title: <input type="text" name="title"> <br /> 
-                <textarea name="blog">Begin writing here...</textarea> <br />
-                <input type="submit" value="submit" name="finish"> <br />
-            </div>
-            <input type="hidden" name="Date" value="">
-            <br />
-            
-        </form>
-        <button onclick="createBlog()" id="blogbutton" style="visibility:visible"> Create Blog </button>
-        <br> 
-        <footer>
-            <a href="loginpage.html"> Log out </a>
-        </footer>
-    </body>
-</html>
+                <html lang="en">
+                    <head> 
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                        <title>Document</title>
+                        <link rel="stylesheet" type="text/css" href="../assets/basictemplate.css">
+                        <script type="text/javascript" src="../assets/validate.js"> </script>
+                    </head>
+                    <body>
+                        <h1> Welcome! HayleyW </h1>
+                        <% arr.forEach(function(params) {
+                            %> 
+                            <h3> <%= params.title %>  </h3>
+                            <p> <%= params.blog %> </p>
+                            <br />
+                            <br />
+                            <% }); %>
+                        <form action="createblog.html" method="post"> 
+                            <input type="hidden" value='<%=user%>' name="user">
+                            <div name="reveal" style="visibility:hidden">
+                                Title: <input type="text" name="title"> <br /> 
+                                <textarea name="blog">Begin writing here...</textarea> <br />
+                                <input type="submit" value="submit" name="finish"> <br />
+                            </div>
+                            <input type="hidden" name="Date" value="">
+                            <br />
+                            
+                        </form>
+                        <button onclick="createBlog()" id="blogbutton" style="visibility:visible"> Create Blog </button>
+                        <br> <a id="footer" href="loginpage.html"> Log out </a>
+                    </body>
+                </html>

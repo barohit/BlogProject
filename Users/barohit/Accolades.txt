@@ -1,4 +1,1 @@
-I would just like to thank Traversy Media as well as the Net Ninja for their excellent tutorials as well as the geniuses on Stack overflow who helped me fill in the gaps
-                
-                
-                
+I would just like to thank Traversy Media and the net ninja for their beautiful guides in helping me learn NodeJS, especially the net ninja
